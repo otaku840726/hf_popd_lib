@@ -1,0 +1,31 @@
+Please help me check if this is a receipt for a bank transaction. \n
+I need the following data, \n
+
+1.Is bank transaction: Does the image relate to a bank transaction?, Answer true/false. \n
+2.Transaction type: Type of transaction, if you are not sure, answer unknown, Answer transfer/deposit/withdrawal/remittance/unknown. \n
+3.Transaction time. \n
+4.Transaction identity number: maybe like Transaction ID/Reference Number/Transfer ID/Transaction Code/Money Tracking Control Number (MTCN). \n
+5.Payer bank name. \n
+6.Receiver bank name. \n
+7.Transfer amount: The amount the payer transfers to the receiver, without currency string. \n
+8.Transaction currency. \n
+9.Payer account: The payer's bank account number, but it may not appear in the image. \n
+10.Receiver account: The receiver's bank account number. \n
+11.Payer account balance: The account balance after the payer transfers. \n
+
+Payer account and Transaction identity number cannot be the same. \n
+
+具体输出格式例子为： \n
+{
+    "is_bank_transaction": "true/false",
+    "transaction_type": "transfer/deposit/withdrawal/remittance/unknown",
+    "transaction_time": "yyyy-MM-dd HH:mm:ss|null",
+    "transaction_identity_number": "string|null",
+    "transfer_amount": "decimal|null",
+    "transaction_currency": "string|null",
+    "payer_bank_name": "string|null",
+    "payer_account": "string|null",
+    "payer_account_balance": "decimal|null",
+    "receiver_bank_name": "string|null",
+    "receiver_account": "string|null"
+}

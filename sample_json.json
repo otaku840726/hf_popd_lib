@@ -1,0 +1,13 @@
+{
+    "is_bank_transaction": true,
+    "transaction_type": "transfer",
+    "transaction_time": "yyyy-MM-dd HH:mm:ss",
+    "transaction_identity_number": "999999999",
+    "transfer_amount": 500,
+    "transaction_currency": "CNY",
+    "payer_bank_name": "Super Bank",
+    "payer_account": "111-4-xxxx783",
+    "payer_account_balance": null,
+    "receiver_bank_name": "Crazy Bank",
+    "receiver_account": "829-2-xxxx397"
+}
