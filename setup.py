@@ -5,11 +5,16 @@ setup(
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
+        'gradio[oauth]==5.12.0',
+        'numpy==1.24.4',
+        'Pillow==10.3.0',
+        'Requests==2.31.0',
         'torch',
-        'transformers',
-        'Pillow',
+        'git+https://github.com/huggingface/transformers.git',
         'pandas',
-        'requests'
+        'torchvision',
+        'accelerate',
+        'qwen-vl-utils'
     ],
     include_package_data=True,
     description='My private library for OCR and authenticity detection',
