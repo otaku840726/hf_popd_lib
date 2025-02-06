@@ -10,7 +10,7 @@ setup(
         'Pillow==10.3.0',
         'Requests==2.31.0',
         'torch',
-        'git+https://github.com/huggingface/transformers.git',
+        'transformers',
         'pandas',
         'torchvision',
         'accelerate',
