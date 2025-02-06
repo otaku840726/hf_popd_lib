@@ -1,11 +1,11 @@
 import gradio as gr
-import hf_popd_lib.ocr as ocr_lib
-import hf_popd_lib.authenticity as auth_lib
-import hf_popd_lib.utils as utils
+import popd.ocr as ocr_lib
+import popd.authenticity as auth_lib
+import popd.utils as utils
 
 # 动态加载私有库中的 prompt.txt 文件
-default_prompt = utils.load_text_from_file("hf_popd_lib/prompt.txt")
-sample_json = utils.load_text_from_file("hf_popd_lib/sample_json.json")
+default_prompt = utils.load_text_from_file("popd/prompt.txt")
+sample_json = utils.load_text_from_file("popd/sample_json.json")
 sample_authenticity = {'Real': 0, 'Fake': 0}
 
 with gr.Blocks() as demo:
